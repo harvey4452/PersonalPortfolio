@@ -20,5 +20,63 @@
             <button onclick="Contact()" style="margin-right: 1vw;">Contact</button>
         </div>
     </div>
+    <div class="Row" style="padding-top: 5vh;">
+        <div class="ProfilePicture">
+            <img src="Images/pfp.png" alt="Profile picture">
+        </div>
+        <div class="Description">
+            <div class="TitleText">Harvey Emmerson</div>
+            <div class="SubText">
+                A fourth-year Software Engineering student currently pursuing an integrated master’s degree at the University of Hull.
+                Specialises in full-stack development, using C# for RESTful backend API's and HTML with JavaScript for frontend development.
+            </div>
+            <div class="ButtonRow">
+                <a href="https://www.linkedin.com/in/harvey-emmerson-6550622a4/" target="_blank" class="IconButton">
+                    <img src="Images/LinkedIn.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/harvey4452" target="_blank" class="IconButton">
+                    <img src="Images/GitHub.png" alt="GitHub">
+                </a>
+                <a href="mailto:harveyemmerson122004@gmail.com" class="IconButton">
+                    <img src="Images/Gmail.png" alt="Email">
+                </a>
+                <a href="Documents/CV.pdf" class="IconButton" download>
+                    <img src="Images/CVIcon.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    </div>
     <script src="JS/Globals.js"></script>
 </body>
+
+<style>
+
+.Description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5vh;
+    width: 50%;
+    height: 50%
+}
+
+.ProfilePicture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.ProfilePicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+</style>
