@@ -2,9 +2,9 @@ function Home()
 {
     window.location.href = "index.html";
 }
-function About()
+function Skills()
 {
-    window.location.href = "About.html";
+    window.location.href = "Skills.html";
 }
 function Projects()
 {

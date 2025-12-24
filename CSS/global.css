@@ -102,3 +102,7 @@ form {
 .SubmitButton:active {
     background-color: #00408d;
 }
+
+body{
+    background-color: lightgrey;
+}
