@@ -56,6 +56,12 @@ const skills = [
     description:
       "Experience using unit testing within C#, using MSunit tests, and Python, using the unit testing library, to create functional and robust code. Brief experience using test driven development.",
   },
+  {
+    title: "React",
+    subText: "Less than 1 year of experience",
+    description:
+      "Brief experience using React, my only project using react is this portfolio! I am hoping to further my skills in this using the portfolio as a small project to learn from.",
+  },
 ];
 
 function Skills() {
