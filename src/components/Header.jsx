@@ -1,31 +1,14 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
-
-function Home() {
-  window.location.href = "/";
-}
-
-function Skills() {
-  window.location.href = "/skills";
-}
-
-function Projects() {
-  window.location.href = "/projects";
-}
 
 function Header() {
   return (
     <div className="header">
       <div className="logo">Harvey Emmerson</div>
-
       <div className="actions">
-        <button onClick={Home}>Home</button>
-        <button onClick={Skills}>Skills</button>
-        <button
-          onClick={Projects}
-          style={{ marginRight: "1.5vw" }}
-        >
-          Projects
-        </button>
+        <Link to="/"><button>Home</button></Link>
+        <Link to="/skills"><button>Skills</button></Link>
+        <Link to="/projects"><button>Projects</button></Link>
       </div>
     </div>
   );
