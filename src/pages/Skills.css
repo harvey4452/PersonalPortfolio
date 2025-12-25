@@ -1,0 +1,51 @@
+.SkillGrid {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+}
+
+.SkillFrame {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  width: 25vw;
+  margin: 5vh 1vw;
+  padding: 1vh 1vw;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.SkillTitleText {
+  font-size: calc(1.6vw + 1.6vh);
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0;
+}
+
+.SkillSubText {
+  font-size: calc(1vw + 1vh);
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0;
+}
+
+.SkillDescriptiveText {
+  font-size: calc(0.7vw + 0.7vh);
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1vh;
+}

@@ -1,0 +1,28 @@
+.Description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5vh;
+    width: 50%;
+    height: 50%
+}
+
+.ProfilePicture {
+    min-width: min(220px, 50vw);
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProfilePicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
