@@ -65,7 +65,6 @@ const skills = [
 ];
 
 function Skills() {
-  // Split skills into rows of 3
   const rows = [];
   for (let i = 0; i < skills.length; i += 3) {
     rows.push(skills.slice(i, i + 3));
@@ -74,11 +73,11 @@ function Skills() {
   return (
     <>
       <Header />
-      <div className="SkillGrid">
+      <div className="Grid">
         {rows.map((row, rowIndex) => (
           <div className="Row" key={rowIndex}>
             {row.map((skill, index) => (
-              <div className="SkillFrame" key={index}>
+              <div className="SkillFrame Frame" key={index}>
                 <div className="SkillTitleText">{skill.title}</div>
                 <div className="SkillSubText">{skill.subText}</div>
                 <div className="SkillDescriptiveText">{skill.description}</div>

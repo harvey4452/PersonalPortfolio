@@ -1,0 +1,31 @@
+.ProjectFrame {
+  height: 40vh;
+  width: 27.5vw;
+  align-items: center;
+}
+
+.ProjectTitleText {
+  font-size: calc(1.1vw + 1.1vh);
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0;
+}
+
+.ProjectSubText {
+  font-size: calc(0.75vw + 0.75vh);
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0;
+}
+
+.ProjectDescriptiveText {
+  font-size: calc(0.7vw + 0.7vh);
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1vh;
+}
+
+.ProjectImage {
+    width: 20vw;
+    height: 25vh;
+}

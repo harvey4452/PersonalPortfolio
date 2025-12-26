@@ -31,31 +31,28 @@ function Home() {
               rel="noreferrer"
               className="IconButton"
             >
-              <img src={linkedin} alt="LinkedIn" />
+            <img src={linkedin} alt="LinkedIn" />
             </a>
-
             <a
               href="https://github.com/harvey4452"
               target="_blank"
               rel="noreferrer"
               className="IconButton"
             >
-              <img src={github} alt="GitHub" />
+            <img src={github} alt="GitHub" />
             </a>
-
             <a
               href="mailto:harveyemmerson122004@gmail.com"
               className="IconButton"
             >
-              <img src={gmail} alt="Email" />
+            <img src={gmail} alt="Email" />
             </a>
-
             <a
-              href="/CV.pdf"
+              href={`${process.env.PUBLIC_URL}/CV.pdf`}
               className="IconButton"
               download
             >
-              <img src={cvIcon} alt="CV" />
+            <img src={cvIcon} alt="CV" />
             </a>
           </div>
         </div>
