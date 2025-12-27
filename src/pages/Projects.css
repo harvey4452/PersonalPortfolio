@@ -1,7 +1,20 @@
 .ProjectFrame {
-  height: 40vh;
+  height: 20vh;
   width: 27.5vw;
   align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.ProjectFrame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fafafa;
+}
+
+.ProjectFrame:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .ProjectTitleText {
@@ -13,19 +26,16 @@
 
 .ProjectSubText {
   font-size: calc(0.75vw + 0.75vh);
-  font-weight: 500;
+  font-weight: 600;
   color: black;
-  margin-bottom: 0;
+  opacity: 0.85;
+  margin-bottom: 1vh;
 }
 
 .ProjectDescriptiveText {
   font-size: calc(0.7vw + 0.7vh);
   font-weight: 500;
   color: black;
+  opacity: 0.9;
   margin-bottom: 1vh;
-}
-
-.ProjectImage {
-    width: 20vw;
-    height: 25vh;
 }

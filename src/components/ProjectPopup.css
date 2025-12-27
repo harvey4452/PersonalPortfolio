@@ -1,0 +1,114 @@
+.PopupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.PopupContainer {
+  margin-top: 15vh; 
+  width: 80vw;
+  height: 80vh;
+
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.PopupHeader {
+  height: 8vh;
+  padding: 0 2vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.PopupHeader h2 {
+  font-size: calc(1.2vw + 1.2vh);
+  font-weight: 600;
+  margin: 0;
+}
+
+.PopupClose {
+  background: none;
+  border: none;
+  font-size: calc(1.5vw + 1.5vh);
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.PopupClose:hover {
+  opacity: 1;
+}
+
+.PopupContent {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2vw;
+  padding: 2vh 2vw;
+
+  overflow: hidden;
+}
+
+.PopupImages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  overflow-y: auto;
+}
+
+.PopupImages img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PopupInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  overflow-y: auto;
+}
+
+.PopupInfo section h3 {
+  font-size: calc(0.9vw + 0.9vh);
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+.PopupInfo p {
+  font-size: calc(0.7vw + 0.7vh);
+  font-weight: 500;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.PopupInfo ul {
+  padding-left: 1.2vw;
+  margin: 0;
+}
+
+.PopupInfo li {
+  font-size: calc(0.7vw + 0.7vh);
+  font-weight: 500;
+  margin-bottom: 1vh;
+  opacity: 0.9;
+}
