@@ -12,6 +12,7 @@ function ProjectPopup(
 {
   title,
   description,
+  features,
   filePaths,
   extendedTechStack,
   onClose,
@@ -48,6 +49,14 @@ function ProjectPopup(
               <h3>Extended Tech Stack</h3>
               <ul>
                 {extendedTechStack.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
+            <section>
+              <h3>Features</h3>
+              <ul>
+                {features.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
