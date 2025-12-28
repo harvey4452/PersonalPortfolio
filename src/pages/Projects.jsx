@@ -145,25 +145,27 @@ const projects =
       "GymAppBuddy.png",
     ],
   },
-  /*
   {
     title: "Who-Is",
-    techStack: "Tech stack: C#",
+    techStack: "Tech stack: C#, MySQL",
     description: "A C# console-based server using sockets which interacts with a MySQL database to track and update data regarding a company’s employees.",
     features:
     [
-      ""
+      "A static client that can add records, delete records, and change the value of fields in the MySQL database",
+      "A server that can recieve and process requests from the static client",
+      "The server can take in a batch of debug requests which will run upon starting the server",
     ],
     extendedTechStack: 
     [
-
+      "C# - Used to create the backend business logic and act as a client server",
+      "MySQL - Used to store data on users",
     ],
     images: 
     [
-
+      "WhoIs1.png",
+      "WhoIs2.png",
     ],
   },
-  */
   {
     title: "Building management system",
     techStack: "Tech stack: C#",
